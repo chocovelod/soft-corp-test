@@ -1,0 +1,58 @@
+$base-color: #000000;
+$blue-color: #3e9cdc;
+$white-color: #ffffff;
+$grey-color: #bbbbbb;
+
+.Color__primary {
+  color: $base-color;
+}
+
+.Color__blue {
+  color: $blue-color;
+}
+
+.Color__white {
+  color: $white-color;
+}
+
+.OrderHead__title {
+  text-transform: uppercase;
+  color: $white-color;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43.2px;
+
+  span {
+    color: $blue-color;
+  }
+}
+
+.OrderHead__subTitle {
+  margin-top: 30px;
+  color: $grey-color;
+  font-size: 18;
+  line-height: 21.6px;
+}
+
+.OrderHead__iconsList {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+
+  li:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 209px;
+    color: $white-color;
+
+    p {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+}

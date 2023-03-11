@@ -1,0 +1,32 @@
+$base-color: #000000;
+$blue-color: #3e9cdc;
+$white-color: #ffffff;
+$grey-color: #bbbbbb;
+
+.Color__primary {
+  color: $base-color;
+}
+
+.Color__blue {
+  color: $blue-color;
+}
+
+.Color__white {
+  color: $white-color;
+}
+
+.Order {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3d4050;
+}
+
+.Order__head,
+.Order__form {
+  position: relative;
+  z-index: 1;
+}
