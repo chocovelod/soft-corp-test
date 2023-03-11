@@ -1,6 +1,14 @@
-const Hero = () => {
+// import "./style.scss";
+
+import { FC } from "react";
+
+interface Props {
+  className?: string;
+}
+
+const Hero: FC<Props> = ({ className }) => {
   return (
-    <div>
+    <div className={className}>
       <h1>Lorem ipsum dolor sit amet consectetur adipiscing</h1>
       <ul>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
