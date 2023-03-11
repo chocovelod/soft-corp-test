@@ -1,7 +1,6 @@
 import { Header } from "@/modules/Header";
 import { Hero } from "@/modules/Hero";
 import { Order } from "@/modules/Order.tsx";
-import styles from "@/styles/Home.module.scss";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 
@@ -22,7 +21,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <main className={styles.Container}>
+      <main>
         <Header />
         <Hero />
         <Order />

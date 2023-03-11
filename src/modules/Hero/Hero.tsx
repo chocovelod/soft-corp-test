@@ -1,21 +1,28 @@
 import { Button } from "@/components/Button/Button";
+import cn from "classnames";
 import Image from "next/image";
 import { FC } from "react";
+import containerStyles from "../../styles/Home.module.scss";
 import styles from "./style.module.scss";
-
 interface Props {
   className?: string;
 }
 
 const Hero: FC<Props> = ({ className }) => {
   return (
-    <div className={styles.Hero}>
-      <div className={styles.Hero__content}>
+    <section className={styles.Hero}>
+      <div
+        className={cn(`${styles.Hero__content} ${containerStyles.Container}`)}
+      >
         <h1 className={styles.Hero__title}>
           <span className={styles.Color__blue}>Lorem ipsum</span> dolor sit{" "}
           <br />
           amet consectetur{" "}
           <span className={styles.Color__blue}>adipiscing</span>
+        </h1>
+        <h1 className={styles.Hero__title_mobile}>
+          <span className={styles.Color__blue}>Lorem ipsum</span> dolor sit amet
+          consectetur <span className={styles.Color__blue}> sadipiscing</span>
         </h1>
         <ul className={styles.Hero__list}>
           <p className={styles.Hero__list_title}>
@@ -27,11 +34,11 @@ const Hero: FC<Props> = ({ className }) => {
         </ul>
         <div className={styles.Hero__buttonsContainer}>
           <Button>заказать</Button>
-          <Button className={styles.Hero__secondButton}>подробнее</Button>
+          <Button>подробнее</Button>
         </div>
       </div>
-
-      <div>
+      <div className={containerStyles.FullBleed}>
+        <div className={styles.Hero__background} />
         <Image
           className={styles.Hero__image}
           src="/HeroImage.jpg"
@@ -41,7 +48,7 @@ const Hero: FC<Props> = ({ className }) => {
           objectFit="cover"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

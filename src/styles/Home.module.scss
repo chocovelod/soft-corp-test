@@ -5,3 +5,8 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+
+.FullBleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
