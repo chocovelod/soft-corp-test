@@ -34,7 +34,7 @@ const Hero: FC<Props> = ({ className }) => {
         </ul>
         <div className={styles.Hero__buttonsContainer}>
           <Button>заказать</Button>
-          <Button>подробнее</Button>
+          <Button className={styles.Hero__secondButton}>подробнее</Button>
         </div>
       </div>
       <div className={containerStyles.FullBleed}>
