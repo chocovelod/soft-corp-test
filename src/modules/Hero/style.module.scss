@@ -1,0 +1,60 @@
+$base-color: #000000;
+$blue-color: #3e9cdc;
+$white-color: #000000;
+
+.Color__primary {
+  color: $base-color;
+}
+
+.Color__blue {
+  color: $blue-color;
+}
+
+.Color__white {
+  color: $white-color;
+}
+
+.Hero__content {
+  padding-top: 203px;
+  position: relative;
+  z-index: 1;
+}
+
+.Hero__title {
+  max-width: 780px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57.6px;
+  text-transform: uppercase;
+}
+
+.Hero__list {
+  margin-top: 80px;
+  li {
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.Hero__list_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 5px;
+}
+
+.Hero__buttonsContainer {
+  display: flex;
+  margin-top: 80px;
+}
+
+.Hero__secondButton {
+  margin-left: 30px;
+}
+
+.Hero__image {
+  position: absolute;
+  z-index: 0;
+  max-height: 850px;
+}

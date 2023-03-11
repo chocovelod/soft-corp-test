@@ -1,6 +1,7 @@
 import { Header } from "@/modules/Header";
 import { Hero } from "@/modules/Hero";
 import { Order } from "@/modules/Order.tsx";
+import styles from "@/styles/Home.module.scss";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 
@@ -14,8 +15,14 @@ export default function Home() {
         <meta name="description" content="Soft corp test" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
-      <main>
+      <main className={styles.Container}>
         <Header />
         <Hero />
         <Order />

@@ -1,0 +1,45 @@
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  padding: 15px 31.48px;
+}
+
+.Button_primary {
+  background: #3e9cdc;
+  box-shadow: inset 0 0 0 1px #ffffff;
+  color: #ffffff;
+}
+
+.Button_primary:hover {
+  box-shadow: 0px 0px 0px 2px #e1eefd;
+}
+
+.Button_secondary {
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px #6f6d7b;
+  color: #10111d;
+}
+
+.Button_secondary:hover {
+  box-shadow: inset 0 0 0 1px #0080ff;
+}
+
+.Button__label {
+  text-align: center;
+}
+
+.Button__iconContainer {
+  display: flex;
+}
+
+.Button__rightIconContainer {
+  margin-left: 8px;
+}
+
+.Button__leftIconContainer {
+  margin-right: 8px;
+}

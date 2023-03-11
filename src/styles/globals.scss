@@ -18,8 +18,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 figure,
 blockquote,
 dl,
@@ -34,6 +34,8 @@ html {
 
 /* Set core body defaults */
 body {
+  font-family: "Lato", sans-serif;
+
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;

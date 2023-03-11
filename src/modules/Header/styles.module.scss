@@ -1,0 +1,13 @@
+.Header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: rgba(16, 16, 29, 0.9);
+}
+
+.Header__container {
+  display: flex;
+  justify-content: space-between;
+}
