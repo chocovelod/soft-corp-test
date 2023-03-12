@@ -55,6 +55,32 @@
 .OrderForm__rangeInput {
   grid-column-start: 1;
   grid-column-end: 3;
+
+  input[type="range"] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ffffff;
+    overflow: visible;
+    border-radius: 8px;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 6px;
+    -webkit-appearance: none;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    position: relative;
+    top: -8px;
+    width: 23px;
+    height: 23px;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: #42a9ed;
+    border-radius: 50%;
+    border: 3px solid #286690;
+  }
 }
 
 .OrderForm__rangeInput_range {
