@@ -16,7 +16,12 @@ interface Props {
 
 const OrderHead: FC<Props> = ({ className }) => {
   return (
-    <div className={cn(`${containerStyles.Container}`, className)}>
+    <div
+      className={cn(
+        `${containerStyles.Container} ${style.OrderHead}`,
+        className
+      )}
+    >
       <h2 className={style.OrderHead__title}>
         Оформление <span>Заказа</span>
       </h2>
