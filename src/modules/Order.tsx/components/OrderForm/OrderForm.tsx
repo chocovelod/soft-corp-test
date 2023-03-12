@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button/Button";
+import cn from "classnames";
 import { FC } from "react";
 import style from "./styles.module.scss";
 
@@ -8,7 +9,7 @@ interface Props {
 
 const OrderForm: FC<Props> = ({ className }) => {
   return (
-    <div className={className}>
+    <div className={cn(`${className}, ${style.OrderForm}`)}>
       <select name="" id="" className={style.OrderForm__selectContainer}>
         <option>Выберите тип системы</option>
         <option>2</option>
@@ -16,14 +17,20 @@ const OrderForm: FC<Props> = ({ className }) => {
         <option>4</option>
         <option>5</option>
       </select>
-      <label htmlFor="">
-        Ваш e-mail
-        <input type="text" />
-      </label>
-      <label htmlFor="">
-        Ваше имя
-        <input type="text" />
-      </label>
+      <div className={style.OrderForm__inputContainer}>
+        <input
+          type="text"
+          placeholder="Ваш e-mail"
+          className={style.OrderForm__input}
+        />
+      </div>
+      <div className={style.OrderForm__inputContainer}>
+        <input
+          type="text"
+          placeholder="Ваше имя"
+          className={style.OrderForm__input}
+        />
+      </div>
       <input
         type="range"
         name="range"
