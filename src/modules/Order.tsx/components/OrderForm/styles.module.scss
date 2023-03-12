@@ -2,8 +2,7 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
 
   grid-gap: 30px;
 
@@ -51,4 +50,19 @@
 
 .OrderForm__input:focus::placeholder {
   opacity: 0;
+}
+
+.OrderForm__rangeInput {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.OrderForm__rangeInput_range {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.OrderSlider__head {
+  display: flex;
+  justify-content: space-between;
 }

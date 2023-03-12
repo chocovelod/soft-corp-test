@@ -1,6 +1,7 @@
 import { Button } from "@/components/Button/Button";
 import cn from "classnames";
 import { FC } from "react";
+import { OrderSlider } from "./OrderSlider";
 import style from "./styles.module.scss";
 
 interface Props {
@@ -31,17 +32,24 @@ const OrderForm: FC<Props> = ({ className }) => {
           className={style.OrderForm__input}
         />
       </div>
-      <input
-        type="range"
-        name="range"
-        id="range"
-        className="range"
-        min="1"
-        max="20"
-        step="1"
-        value="1"
-      />
-      <output className="num">1</output>
+      <OrderSlider className={style.OrderForm__rangeInput} />
+      {/* <div className={style.OrderForm__rangeInput}>
+        <output className="num">
+          <span>Sed ut perspiciatis, unde omnis iste natus</span>
+          <span></span>
+        </output>
+
+        <input
+          type="range"
+          name="range"
+          id="range"
+          className={style.OrderForm__rangeInput_range}
+          min="1"
+          max="100"
+          step="1"
+          value="1"
+        />
+      </div> */}
 
       <Button>Отправить</Button>
     </div>
