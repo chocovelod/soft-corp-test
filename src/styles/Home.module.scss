@@ -1,3 +1,5 @@
+// Container
+
 .Container {
   max-width: calc(1172px + 2 * 40px);
   margin-left: auto;
@@ -9,4 +11,35 @@
 .FullBleed {
   width: 100vw;
   margin-left: calc(50% - 50vw);
+}
+
+// Colors
+
+$base-color: #000000;
+$blue-color: #3e9cdc;
+$white-color: #ffffff;
+$grey-color: #c3c3c3;
+
+.Color__primary {
+  color: $base-color;
+}
+
+.Color__blue {
+  color: $blue-color;
+}
+
+.Color__white {
+  color: $white-color;
+}
+
+.Color__lightGray {
+  color: $grey-color;
+}
+
+// Fonts
+
+.Font__13_16 {
+  font-size: 13px;
+  line-height: 15.6px;
+  font-weight: 400;
 }

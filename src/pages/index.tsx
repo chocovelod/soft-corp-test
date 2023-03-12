@@ -1,3 +1,4 @@
+import { Footer } from "@/modules/Footer";
 import { Header } from "@/modules/Header";
 import { Hero } from "@/modules/Hero";
 import { Order } from "@/modules/Order.tsx";
@@ -25,6 +26,7 @@ export default function Home() {
         <Header />
         <Hero />
         <Order />
+        <Footer />
       </main>
     </>
   );
