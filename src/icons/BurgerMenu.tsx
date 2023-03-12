@@ -13,8 +13,8 @@ const BurgerMenu: FC<SVGAttributes<SVGElement>> = (props) => {
       <path
         d="M4 18h16M4 12h16M4 6h16"
         stroke="#ffffff"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   );
