@@ -33,8 +33,8 @@ const OrderForm: FC<Props> = ({ className }) => {
         />
       </div>
       <OrderSlider className={style.OrderForm__rangeInput} />
-
-      <Button>Отправить</Button>
+      <button>Прикрепить файл</button>
+      <Button className={style.OrderForm__pushButton}>Отправить</Button>
     </div>
   );
 };

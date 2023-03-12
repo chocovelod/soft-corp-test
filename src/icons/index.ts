@@ -1,3 +1,5 @@
+export { BurgerMenu } from "./BurgerMenu";
+export { CloseIcon } from "./CloseIcon";
 export { DragDropIcon } from "./DragDropIcon";
 export { EmailIcon } from "./EmailIcon";
 export { Logo } from "./Logo";

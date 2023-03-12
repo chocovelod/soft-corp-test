@@ -1,17 +1,24 @@
 import { Logo } from "@/icons";
-import { HeaderMenu } from "./components";
+import cn from "classnames";
+import containerStyles from "../../styles/Home.module.scss";
+import { HeaderMenu, HeaderMobileMenu } from "./components";
 import styles from "./styles.module.scss";
 
 const Header = () => {
   return (
-    <div className={styles.Header}>
-      <div className={styles.Header__container}>
+    <header className={styles.Header}>
+      <div
+        className={cn(
+          `${styles.Header__container} ${containerStyles.Container}`
+        )}
+      >
         <div>
-          <Logo />
+          <Logo className={styles.Header__logo} />
         </div>
-        <HeaderMenu />
+        <HeaderMenu className={styles.Header__navigation} />
+        <HeaderMobileMenu className={styles.Header__navigationMobile} />
       </div>
-    </div>
+    </header>
   );
 };
 

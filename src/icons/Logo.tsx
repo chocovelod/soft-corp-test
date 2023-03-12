@@ -3,8 +3,7 @@ import { FC, SVGAttributes } from "react";
 const Logo: FC<SVGAttributes<SVGElement>> = (props) => {
   return (
     <svg
-      width="245"
-      height="21"
+      viewBox="0 0 247 21"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
