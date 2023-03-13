@@ -67,6 +67,9 @@ $white-color: #ffffff;
 
 .Hero__image {
   position: absolute;
+  top: 0;
+  width: 100%;
+  height: -webkit-fill-available;
   z-index: 0;
   object-position: right;
   object-fit: cover;

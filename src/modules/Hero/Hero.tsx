@@ -1,6 +1,5 @@
 import { Button } from "@/components/Button/Button";
 import cn from "classnames";
-import Image from "next/image";
 import { FC } from "react";
 import containerStyles from "../../styles/Home.module.scss";
 import styles from "./styles.module.scss";
@@ -47,13 +46,7 @@ const Hero: FC<Props> = ({ className }) => {
       </div>
       <div className={containerStyles.FullBleed}>
         <div className={styles.Hero__background} />
-        <Image
-          className={styles.Hero__image}
-          src="/HeroImage.jpg"
-          alt=""
-          fill
-          priority
-        />
+        <img className={styles.Hero__image} src="/HeroImage.jpg" alt="" />
       </div>
     </section>
   );
