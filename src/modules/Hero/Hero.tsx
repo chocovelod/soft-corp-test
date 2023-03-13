@@ -14,7 +14,11 @@ const Hero: FC<Props> = ({ className }) => {
       <div
         className={cn(`${styles.Hero__content} ${containerStyles.Container}`)}
       >
-        <h1 className={styles.Hero__title}>
+        <h1
+          className={cn(
+            `${styles.Hero__title} ${containerStyles.Font__48_57_700}`
+          )}
+        >
           <span className={styles.Color__blue}>Lorem ipsum</span> dolor sit{" "}
           <br />
           amet consectetur{" "}
@@ -25,7 +29,11 @@ const Hero: FC<Props> = ({ className }) => {
           consectetur <span className={styles.Color__blue}> sadipiscing</span>
         </h1>
         <ul className={styles.Hero__list}>
-          <p className={styles.Hero__list_title}>
+          <p
+            className={cn(
+              `${styles.Hero__list_title} ${containerStyles.Font__20_24_700}`
+            )}
+          >
             At vero eos et accusamus et iusto odio dignissimos ducimus!
           </p>
           <li>- Totam rem aperiam eaque ipsa</li>
@@ -44,8 +52,7 @@ const Hero: FC<Props> = ({ className }) => {
           src="/HeroImage.jpg"
           alt=""
           fill
-          objectPosition="right"
-          objectFit="cover"
+          priority
         />
       </div>
     </section>

@@ -1,6 +1,6 @@
 import cn from "classnames";
 import { FC, useState } from "react";
-import containerStyles from "../../../../styles/Home.module.scss";
+import containerStyles from "../../../../../styles/Home.module.scss";
 import styles from "./styles.module.scss";
 
 interface Props {
@@ -15,10 +15,10 @@ const OrderSlider: FC<Props> = ({ className }) => {
   };
 
   return (
-    <div className={className}>
+    <div className={styles.Order__form_rangeInput}>
       <div
         className={cn(
-          `${styles.OrderSlider__head} ${containerStyles.Color__white}`
+          `${styles.Order__form_slider_head} ${containerStyles.Color__white}`
         )}
       >
         <span>Sed ut perspiciatis, unde omnis iste natus</span>
@@ -32,7 +32,7 @@ const OrderSlider: FC<Props> = ({ className }) => {
         max={100}
         step={1}
         value={width}
-        className={styles.OrderForm__rangeInput_range}
+        className={styles.Order__form_rangeInput_range}
       ></input>
     </div>
   );

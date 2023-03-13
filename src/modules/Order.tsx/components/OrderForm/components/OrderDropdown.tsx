@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import styles from "./test.module.scss";
+import styles from "./styles.module.scss";
 type Props = {
   options: string[];
   showDropDown: boolean;
@@ -28,8 +28,8 @@ const OrderDropdown: FC<Props> = ({
       <div
         className={
           showDropDown
-            ? `${styles.Dropdown__menu}`
-            : `${styles.Dropdown__menu_active}`
+            ? `${styles.Order__form__dropdownMenu}`
+            : `${styles.Order__form_dropdownMenu_active}`
         }
       >
         {options.map((option: string, index: number): JSX.Element => {

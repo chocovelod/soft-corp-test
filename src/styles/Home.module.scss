@@ -44,6 +44,18 @@ $grey-color: #c3c3c3;
   font-weight: 400;
 }
 
+.Font__20_24_700 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.Font__48_57_700 {
+  font-size: 48px;
+  line-height: 57px;
+  font-weight: 700;
+}
+
 @media (max-width: 576px) {
   .Container {
     padding-left: 24px;

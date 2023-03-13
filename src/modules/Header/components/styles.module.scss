@@ -5,6 +5,10 @@
     text-transform: uppercase;
   }
 
+  a:hover {
+    color: #43abf0;
+  }
+
   a:not(:first-child) {
     margin-left: 60px;
   }

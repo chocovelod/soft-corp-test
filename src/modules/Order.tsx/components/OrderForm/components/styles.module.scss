@@ -1,0 +1,115 @@
+.Order__form_dropdownMenu {
+  position: relative;
+  cursor: pointer;
+}
+
+.Order__form_dropdownMenu_active {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 10px;
+  background: rgba(39, 39, 51);
+  color: #ffffff;
+  border: 1px solid #3d4050;
+  border-radius: 0 0 3px 3px;
+  max-height: 228px;
+  overflow-y: scroll;
+  font-size: 18px;
+  line-height: 34px;
+  cursor: pointer;
+  p {
+    margin-top: 8px;
+  }
+
+  p:hover {
+    color: #42a9ed;
+  }
+}
+
+.Order__form_dropdownMenu_active::-webkit-scrollbar {
+  width: 7px;
+}
+.Order__form_dropdownMenu_active {
+  scrollbar-width: thin;
+}
+.Order__form_dropdownMenu_active::-webkit-scrollbar-track {
+  background: #3d4050;
+}
+.Order__form_dropdownMenu_active::-webkit-scrollbar-thumb {
+  background-color: #3e9cdc;
+  height: 53px;
+  border-radius: 3px;
+}
+
+.Order__form_rangeInput {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  input[type="range"] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ffffff;
+    overflow: visible;
+    border-radius: 8px;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 6px;
+    -webkit-appearance: none;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    position: relative;
+    top: -8px;
+    width: 23px;
+    height: 23px;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: #42a9ed;
+    border-radius: 50%;
+    border: 3px solid #286690;
+  }
+
+  input[type="range"]::-moz-range-track {
+    height: 6px;
+    -webkit-appearance: none;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    position: relative;
+    top: -8px;
+    width: 23px;
+    height: 23px;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: #42a9ed;
+    border-radius: 50%;
+    border: 3px solid #286690;
+  }
+
+  /*hide the outline behind the border*/
+  input[type="range"]:-moz-focusring {
+    outline: none;
+  }
+
+  input[type="range"]:focus::-moz-range-track {
+    background: none;
+  }
+}
+
+.Order__form_rangeInput_range {
+  width: 100%;
+  margin-top: 10px;
+  height: 8px;
+}
+
+.Order__form_slider_head {
+  display: flex;
+  justify-content: space-between;
+}
