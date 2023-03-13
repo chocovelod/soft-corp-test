@@ -126,7 +126,40 @@ $white-color: #ffffff;
   .Hero__background {
     display: block;
   }
-  // .Hero__image {
-  //   max-height: 544px;
-  // }
+}
+
+@media (max-width: 576px) {
+  .Hero__content {
+    padding-bottom: 48px;
+  }
+
+  .Hero__title_mobile {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .Hero__list,
+  .Hero__buttonsContainer {
+    margin-top: 32px;
+
+    button {
+      padding: 8px 8px;
+    }
+
+    button:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  .Hero__list {
+    li {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .Hero__list_title {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }

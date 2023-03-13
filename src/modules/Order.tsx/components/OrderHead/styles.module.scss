@@ -72,11 +72,39 @@ $grey-color: #bbbbbb;
   }
 }
 
+.OrderHead__iconsList_container {
+  position: relative;
+  div {
+    position: relative;
+
+    svg {
+      position: relative;
+      z-index: 1;
+    }
+
+    img {
+      left: 120% !important;
+      z-index: 0;
+    }
+  }
+}
+
 @media (max-width: 992px) {
+  .OrderHead__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .OrderHead__subTitle {
+    margin-top: 20px;
+  }
+
   .OrderHead__iconsList {
+    margin-top: 30px;
     li {
       svg {
-        width: 56px;
+        width: 80px;
       }
     }
   }
@@ -85,5 +113,9 @@ $grey-color: #bbbbbb;
 @media (max-width: 768px) {
   .OrderHead__iconsList {
     flex-wrap: wrap;
+
+    img {
+      display: none;
+    }
   }
 }

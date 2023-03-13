@@ -43,3 +43,10 @@ $grey-color: #c3c3c3;
   line-height: 15.6px;
   font-weight: 400;
 }
+
+@media (max-width: 576px) {
+  .Container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

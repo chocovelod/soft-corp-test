@@ -1,4 +1,5 @@
 import cn from "classnames";
+import Link from "next/link";
 import { FC } from "react";
 import containerStyles from "../../../styles/Home.module.scss";
 import styles from "./styles.module.scss";
@@ -15,12 +16,12 @@ const HeaderMenu: FC<Props> = ({ className }) => {
         className
       )}
     >
-      <a href="/" className={containerStyles.Color__blue}>
+      <Link href="/" className={containerStyles.Color__blue}>
         Бизнес
-      </a>
-      <a href="/">О нас</a>
-      <a href="/">Цены</a>
-      <a href="/">Оформить заказ</a>
+      </Link>
+      <Link href="/">О нас</Link>
+      <Link href="/">Цены</Link>
+      <Link href="/">Оформить заказ</Link>
     </nav>
   );
 };

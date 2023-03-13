@@ -1,5 +1,7 @@
 export { BurgerMenu } from "./BurgerMenu";
 export { CloseIcon } from "./CloseIcon";
+export { CopyIcon } from "./CopyIcon";
+export { DotsIcons } from "./DotsIcons";
 export { DragDropIcon } from "./DragDropIcon";
 export { EmailIcon } from "./EmailIcon";
 export { Logo } from "./Logo";

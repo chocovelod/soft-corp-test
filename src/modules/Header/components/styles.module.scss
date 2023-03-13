@@ -12,11 +12,14 @@
 
 .Header__menuMobile {
   position: absolute;
-  top: 0;
+  top: 104px;
   right: 0;
-  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 32px;
   background: #fff;
+  text-transform: uppercase;
 
   nav {
     display: flex;
@@ -27,7 +30,19 @@
     a:not(:first-child) {
       margin-top: 16px;
     }
+
+    a:hover {
+      color: #43abf0;
+    }
   }
+}
+
+.Header__button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  height: 32px;
 }
 
 @media (max-width: 1200px) {
@@ -35,5 +50,11 @@
     a:not(:first-child) {
       margin-left: 30px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .Header__menuMobile {
+    top: 83px;
   }
 }

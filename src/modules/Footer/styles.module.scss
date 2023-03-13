@@ -111,4 +111,10 @@
   .Footer__paymentContainer {
     margin-left: 0;
   }
+
+  .Footer__paymentContainer,
+  .Footer__linksContainer {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }

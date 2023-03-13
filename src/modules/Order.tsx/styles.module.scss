@@ -30,3 +30,17 @@ $grey-color: #bbbbbb;
   position: relative;
   z-index: 1;
 }
+
+@media (max-width: 992px) {
+  .Order {
+    padding-top: 96px;
+    padding-bottom: 112px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Order {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}

@@ -1,5 +1,6 @@
 import { BurgerMenu, CloseIcon } from "@/icons";
 import cn from "classnames";
+import Link from "next/link";
 import { FC, useState } from "react";
 import containerStyles from "../../../styles/Home.module.scss";
 import styles from "./styles.module.scss";
@@ -17,9 +18,15 @@ const HeaderMobileMenu: FC<Props> = ({ className }) => {
 
   return (
     <div className={className}>
-      <button onClick={handleClick} className={styles.Header__button}>
-        <BurgerMenu />
-      </button>
+      {isOpen ? (
+        <button onClick={handleClick} className={styles.Header__button}>
+          <CloseIcon />
+        </button>
+      ) : (
+        <button onClick={handleClick} className={styles.Header__button}>
+          <BurgerMenu />
+        </button>
+      )}
 
       {isOpen && (
         <div
@@ -28,17 +35,11 @@ const HeaderMobileMenu: FC<Props> = ({ className }) => {
             className
           )}
         >
-          <button onClick={handleClick}>
-            <CloseIcon />
-          </button>
-
           <nav>
-            <a href="/" className={containerStyles.Color__blue}>
-              Бизнес
-            </a>
-            <a href="/">О нас</a>
-            <a href="/">Цены</a>
-            <a href="/">Оформить заказ</a>
+            <Link href="/">Бизнес</Link>
+            <Link href="/">О нас</Link>
+            <Link href="/">Цены</Link>
+            <Link href="/">Оформить заказ</Link>
           </nav>
         </div>
       )}

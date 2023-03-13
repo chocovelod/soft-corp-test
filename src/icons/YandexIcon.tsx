@@ -16,8 +16,8 @@ const YandexIcon: FC<SVGAttributes<SVGElement>> = (props) => {
         fill="#3E9CDC"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M13.073 8.422v4.163l-7.62 5.148 9.634-3.108V8.422h-2.014Z"
         fill="#000"
         fillOpacity=".2"

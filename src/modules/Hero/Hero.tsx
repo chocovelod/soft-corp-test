@@ -3,7 +3,7 @@ import cn from "classnames";
 import Image from "next/image";
 import { FC } from "react";
 import containerStyles from "../../styles/Home.module.scss";
-import styles from "./style.module.scss";
+import styles from "./styles.module.scss";
 interface Props {
   className?: string;
 }
