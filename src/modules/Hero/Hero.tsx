@@ -46,7 +46,7 @@ const Hero: FC<Props> = ({ className }) => {
       </div>
       <div className={containerStyles.FullBleed}>
         <div className={styles.Hero__background} />
-        <img className={styles.Hero__image} src="/HeroImage.jpg" alt="" />
+        <img className={styles.Hero__image} src="./HeroImage.jpg" alt="" />
       </div>
     </section>
   );
