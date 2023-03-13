@@ -38,7 +38,7 @@ const OrderHead: FC<Props> = ({ className }) => {
           <div>
             <PercentIcon />
             <img
-              src="/Dots.svg"
+              src="./Dots.svg"
               alt=""
               className={styles.OrderHead__iconsList_container_dots}
             />
@@ -49,7 +49,7 @@ const OrderHead: FC<Props> = ({ className }) => {
           <div>
             <DragDropIcon />
             <img
-              src="/Dots.svg"
+              src="./Dots.svg"
               alt=""
               className={styles.OrderHead__iconsList_container_dots}
             />
@@ -60,7 +60,7 @@ const OrderHead: FC<Props> = ({ className }) => {
           <div>
             <MailIcon />
             <img
-              src="/Dots.svg"
+              src="./Dots.svg"
               alt=""
               className={styles.OrderHead__iconsList_container_dots}
             />
