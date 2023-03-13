@@ -1,4 +1,3 @@
-import Image from "next/image";
 import containerStyles from "../../styles/Home.module.scss";
 import { OrderForm } from "./components";
 import { OrderHead } from "./components/OrderHead";
@@ -10,7 +9,13 @@ const Order = () => {
       <div className={containerStyles.Container}>
         <OrderHead className={styles.Order__head} />
         <OrderForm className={styles.Order__form} />
-        <Image src="/OrderBackground.png" alt="" fill objectFit="cover" />
+        <div className={containerStyles.FullBleed}>
+          <img
+            src="./OrderBackground.png"
+            alt=""
+            className={styles.Order__background}
+          />
+        </div>
       </div>
     </section>
   );

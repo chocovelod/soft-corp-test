@@ -89,6 +89,15 @@ $grey-color: #bbbbbb;
   }
 }
 
+.OrderHead__iconsList_container_dots {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 0;
+  object-position: center;
+  object-fit: cover;
+}
+
 @media (max-width: 992px) {
   .OrderHead__title {
     font-weight: 700;

@@ -6,7 +6,6 @@ import {
   SearchIcon,
 } from "@/icons";
 import cn from "classnames";
-import Image from "next/image";
 import { FC } from "react";
 import styles from "./styles.module.scss";
 
@@ -27,28 +26,44 @@ const OrderHead: FC<Props> = ({ className }) => {
         <li className={styles.OrderHead__iconsList_container}>
           <div>
             <SearchIcon />
-            <Image src="/Dots.svg" alt="" fill objectFit="contain" />
+            <img
+              src="/Dots.svg"
+              alt=""
+              className={styles.OrderHead__iconsList_container_dots}
+            />
           </div>
           <p>Lorem ipsum dolor sit amet</p>
         </li>
         <li className={styles.OrderHead__iconsList_container}>
           <div>
             <PercentIcon />
-            <Image src="/Dots.svg" alt="" fill objectFit="contain" />
+            <img
+              src="/Dots.svg"
+              alt=""
+              className={styles.OrderHead__iconsList_container_dots}
+            />
           </div>
           <p>Сonsecteturadipiscing elit</p>
         </li>
         <li className={styles.OrderHead__iconsList_container}>
           <div>
             <DragDropIcon />
-            <Image src="/Dots.svg" alt="" fill objectFit="contain" />
+            <img
+              src="/Dots.svg"
+              alt=""
+              className={styles.OrderHead__iconsList_container_dots}
+            />
           </div>
           <p>Sed do eiusmod tempor</p>
         </li>
         <li className={styles.OrderHead__iconsList_container}>
           <div>
             <MailIcon />
-            <Image src="/Dots.svg" alt="" fill objectFit="contain" />
+            <img
+              src="/Dots.svg"
+              alt=""
+              className={styles.OrderHead__iconsList_container_dots}
+            />
           </div>
           <p>Esse cillum dolore eu fugiat</p>
         </li>

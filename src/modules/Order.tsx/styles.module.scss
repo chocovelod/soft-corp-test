@@ -31,6 +31,19 @@ $grey-color: #bbbbbb;
   z-index: 1;
 }
 
+.test {
+  position: relative;
+}
+
+.Order__background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  object-position: center;
+  object-fit: cover;
+}
+
 @media (max-width: 992px) {
   .Order {
     padding-top: 96px;
