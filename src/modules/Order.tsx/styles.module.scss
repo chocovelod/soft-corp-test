@@ -31,14 +31,11 @@ $grey-color: #bbbbbb;
   z-index: 1;
 }
 
-.test {
-  position: relative;
-}
-
 .Order__background {
   position: absolute;
   top: 0;
   width: 100%;
+  height: -webkit-fill-available;
   z-index: 0;
   object-position: center;
   object-fit: cover;
