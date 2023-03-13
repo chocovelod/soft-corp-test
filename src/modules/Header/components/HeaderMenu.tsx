@@ -12,7 +12,7 @@ const HeaderMenu: FC<Props> = ({ className }) => {
   return (
     <nav
       className={cn(
-        `${styles.Header__menu} ${containerStyles.Color__white}`,
+        `${styles.Header__menu} ${containerStyles.Color__white} ${containerStyles.Font__13_16}`,
         className
       )}
     >

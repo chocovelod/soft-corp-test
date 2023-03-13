@@ -1,7 +1,8 @@
 import { Button } from "@/components/Button/Button";
-import { CopyIcon } from "@/icons";
+import { ArrowIcon, CopyIcon } from "@/icons";
 import cn from "classnames";
-import { FC } from "react";
+import { FC, useState } from "react";
+import { OrderDropdown } from "./OrderDropdown";
 import { OrderSlider } from "./OrderSlider";
 import styles from "./styles.module.scss";
 
@@ -10,15 +11,64 @@ interface Props {
 }
 
 const OrderForm: FC<Props> = ({ className }) => {
+  const [showDropDown, setShowDropDown] = useState<boolean>(false);
+  const [selectOption, setSelectOption] = useState<string>("");
+  const options = () => {
+    return [
+      "Sed ut perspiciatis",
+      "Nemo enim ipsam",
+      "Et harum quidem",
+      " Temporibus autem",
+      "Itaque earum rerum",
+      "Sed ut perspiciatis",
+      "Nemo enim ipsam",
+      "Et harum quidem",
+      " Temporibus autem",
+      "Itaque earum rerum",
+    ];
+  };
+
+  const toggleDropDown = () => {
+    setShowDropDown(!showDropDown);
+  };
+
+  const dismissHandler = (event: React.FocusEvent<HTMLButtonElement>): void => {
+    if (event.currentTarget === event.target) {
+      setShowDropDown(false);
+    }
+  };
+
+  const optionSelection = (option: string): void => {
+    setSelectOption(option);
+  };
+
+  console.log(selectOption);
+
   return (
     <div className={cn(`${className}, ${styles.OrderForm}`)}>
-      <select name="" id="" className={styles.OrderForm__selectContainer}>
-        <option>Выберите тип системы</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
+      <button
+        className={
+          showDropDown ? `${styles.OrderForm__selectActive}` : `${styles.test}`
+        }
+        onClick={(): void => toggleDropDown()}
+        onBlur={(e: React.FocusEvent<HTMLButtonElement>): void =>
+          dismissHandler(e)
+        }
+      >
+        <div className={styles.OrderForm__selectLabel}>
+          {selectOption ? selectOption : "Выберите тип системы"}
+          <ArrowIcon />
+        </div>
+        {showDropDown && (
+          <OrderDropdown
+            className={styles.OrderForm__selectContainer}
+            options={options()}
+            showDropDown={false}
+            toggleDropDown={(): void => toggleDropDown()}
+            optionSelection={optionSelection}
+          />
+        )}{" "}
+      </button>
       <div className={styles.OrderForm__inputContainer}>
         <input
           type="text"

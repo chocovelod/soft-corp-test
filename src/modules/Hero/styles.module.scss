@@ -2,6 +2,10 @@ $base-color: #000000;
 $blue-color: #3e9cdc;
 $white-color: #ffffff;
 
+.test {
+  display: flex;
+}
+
 .Color__primary {
   color: $base-color;
 }
@@ -40,6 +44,7 @@ $white-color: #ffffff;
 .Hero__list {
   margin-top: 80px;
   li {
+    margin-left: 10px;
     margin-top: 5px;
     font-size: 20px;
     line-height: 24px;
@@ -89,7 +94,7 @@ $white-color: #ffffff;
 
 @media (max-width: 1440px) {
   .Hero__content {
-    padding-top: 112px;
+    padding-top: 168px;
     padding-bottom: 112px;
   }
 

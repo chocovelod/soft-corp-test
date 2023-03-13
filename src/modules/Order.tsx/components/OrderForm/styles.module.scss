@@ -10,7 +10,27 @@
 }
 
 .OrderForm__selectContainer {
+  position: relative;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 3px;
+}
+
+.OrderForm__selectActive {
+  padding: 0;
+  background: rgba(61, 64, 80, 0.85);
+  border-radius: 3px 3px 0px 0px;
+  border: none;
+  color: #fff;
+}
+
+.OrderForm__selectLabel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.test {
   border: 1px solid red;
+  padding: 0 10px;
 }
 
 .OrderForm__inputContainer {

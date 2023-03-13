@@ -31,7 +31,7 @@ const HeaderMobileMenu: FC<Props> = ({ className }) => {
       {isOpen && (
         <div
           className={cn(
-            `${styles.Header__menuMobile} ${containerStyles.Color__primary}`,
+            `${styles.Header__menuMobile} ${containerStyles.Color__primary} ${containerStyles.Font__13_16}`,
             className
           )}
         >

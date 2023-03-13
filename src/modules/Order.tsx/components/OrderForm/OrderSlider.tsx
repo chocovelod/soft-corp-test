@@ -22,7 +22,7 @@ const OrderSlider: FC<Props> = ({ className }) => {
         )}
       >
         <span>Sed ut perspiciatis, unde omnis iste natus</span>
-        <output>{width}</output>
+        <output>{width} %</output>
       </div>
 
       <input
