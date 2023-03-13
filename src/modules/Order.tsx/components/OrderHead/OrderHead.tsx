@@ -27,7 +27,7 @@ const OrderHead: FC<Props> = ({ className }) => {
           <div>
             <SearchIcon />
             <img
-              src="/Dots.svg"
+              src="./Dots.svg"
               alt=""
               className={styles.OrderHead__iconsList_container_dots}
             />
