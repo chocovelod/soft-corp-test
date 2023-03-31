@@ -25,6 +25,7 @@ export default function Home() {
       <main>
         <Header />
         <Hero />
+        Test
         <Order />
         <Footer />
       </main>
